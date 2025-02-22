@@ -10,6 +10,7 @@
     <meta http-equiv="Expires" content="0">
 
 <style>
+
 body {
       background-color: rgb(201, 235, 239);
       
@@ -31,7 +32,7 @@ h3   {
       font-size: small;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       padding: 0px; 
-      padding: 20px;
+    
     }
 p    {
       color: rgb(6, 10, 248);
@@ -39,6 +40,7 @@ p    {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       padding: 2px;
       margin: 20px;
+      
     }
 
 a   {
@@ -46,13 +48,10 @@ a   {
      text-decoration: none; /* Remove underline */
      font-size: smaller; 
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     padding: 1px; 
-     padding: 20px;
+     margin: 20px;
     }
         
-a:hover {
-           color: red; /* Color of the link when hovered */
-        }
+
 </style>
 </head>
 <style>
@@ -85,42 +84,74 @@ a:hover {
       color: rgb(13, 13, 13);
       margin: 30px;
       padding-left: 5px;
-      padding: 5px;
-      line-height: .5px;
+      line-height: .1px;
+      justify-content: left; /* Center content horizontally */
+      align-items: left; /* Center content vertically */
+    }
+    .Dettagli_link {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      color: rgb(232, 5, 5);
+      margin: 11px;
+      padding-left: 5px;
+      line-height: .1px;
       justify-content: left; /* Center content horizontally */
       align-items: left; /* Center content vertically */
     }
     .Data {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-style: italic;
-      
-
       color: rgb(0, 0, 0);
       margin: 20px;
       padding: 5px;
       padding-left: 16px;
-      line-height: .5px;
+      line-height: .1px;
       justify-content: left; /* Center content horizontally */
       align-items: left; /* Center content vertically */
     }
     .flag {
             
             border-radius: 10px; /* Makes the corners rounded */
-            width: 500px; /* Sets the width of the image */
-            height: auto; /* Maintains aspect ratio */
+            width: 30%; /* Sets the width of the image */
+            height: 30%; /* Maintains aspect ratio */
             padding-left: 17px;
+
     }
-
-
+    .Hotel {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: italic;
+      font-size: 12;
+      color: rgb(9, 5, 249);
+      margin: 20px;
+      padding-left: 16px;
+      line-height: .5px;
+      justify-content: left; /* Center content horizontally */
+      align-items: left; /* Center content vertically */
+    }
+    
+    .Hotel:hover {
+           color: red; /* Color of the link when hovered */
+        }
+    .Checkin {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: italic;
+      font-size: smaller;
+      color: rgb(9, 5, 249);
+      margin: 20px;
+      padding-left: 16px;
+      line-height: .1px;
+      justify-content: center; /* Center content horizontally */
+      align-items: left; /* Center content vertically */
+    }
 
 </style>
 <body>
 
 <h1 class="Titolo">Viaggio U.S.A 2025 - Link utili</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="USA Flag" width="70%" class="flag">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" class="flag" alt="USA Flag">
 
-<!-- Barra orizzontale -->
-<h1 class="SottoTitolo">Voli di andata</h1>
+<!-- VOLI DI ANDATA  -->
+<h1 class="SottoTitolo">Voli di andata 14 Agosto</h1>
 <a href="https://it.trip.com/online/orderdetail/
 index?oid=1381025083672841&source=bookings&channel=bookings&subChannel=
 tripcard&flightsignature=H4sIAAAAAAAA_4uuVirOTM_zS8xNVbJSSsvJTM8o0U1KS1PSAYuHJeaUgiQMjS0MDYxMDSyMzcyNLEwModKJJ
@@ -149,87 +180,87 @@ Trip Prenotazione num 1381025083672841 - PIN 1654
 <h2 class="Dettagli">- Durata 13h 5 min</h2>  
 
 <!-- SAN FRANCISCO -->
-<h1 class="SottoTitolo">San Francisco</h1>
+<h1 class="SottoTitolo">San Francisco 14 - 18 Agosto</h1>
 <h2 class="Data">14 Agosto 2025</h2>
-<h2>
-<a href="https://www.stanfordcourt.com/">
-HOTEL Stanford Court  - 905 California Street, Nob Hill, San Francisco, CA 94108-Prenotato con booking.com
-</a>
-</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Arrivo aereoporto SFO ore 13:15</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+
+<h2 class="Checkin"> HOTEL S.Francisco - Fare check in dalle 4pm:</h2>
+<a href="https://www.stanfordcourt.com/" class="Hotel">
+  HOTEL Stanford Court  - 905 California Street, Nob Hill, San Francisco, CA 94108 - Prenotato con booking.com
+  </a>
+
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">15 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">16 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">17 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
-<h2 class="Dettagli"> - Check-in: dalle 4pm, Check-out: 18 Agosto entro le 12pm</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">18 Agosto 2025</h2>
-<h2>
-<a href="">
+<a href="" class="Hotel">
 Noleggio auto
 </a>
-<h2 class="Dettagli"> - Partenza per Silicon Valley / Monterey / Carmel</h2>
+<h2 class="Dettagli"> - Partenza per Silicon Valley / Monterey / Carmel ore xx</h2>
 <!-- ########################################################################### -->
 
-<!-- MONTEREY e CARMEL -->
-<h1 class="SottoTitolo">Monterey e Carmel</h1>
+<!-- CARMEL e MONTEREY -->
+<h1 class="SottoTitolo">Carmel e Monterey 18 - 19 Agosto</h1>
 <h2 class="Data">18 Agosto 2025</h2>
-<h2 class="Dettagli"> - Visita a Stanford University</h2>
-<h2 class="Dettagli"> - Visita a Monterey</h2>
-<h2 class="Dettagli"> - Visita a Carmel</h2>
-<h2 class="Dettagli"> - Cena (da prenotare)</h2>
-<h2>
-<a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/seaside/mryca/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-MRYCA">
-  Pernottamento in HOTEL Holiday Inn Express At Monterey Bay-Prenotato con booking.com
-  
+<h2 class="Dettagli">- Visita a Half Moon Bay</h2>
+<h2 class="Dettagli">- Visita a Stanford University</h2>
+<h2 class="Dettagli">- Visita a Carmel</h2>
+<h2 class="Dettagli">- Visita a Monterey</h2>
+
+<h2 class="Checkin"> HOTEL Monterey - Fare check in dalle xx</h2>
+<a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/seaside/mryca/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-MRYCA"
+class="Hotel">
+  Pernottamento in HOTEL Holiday Inn Express At Monterey Bay - Prenotato con booking.com
 </a>
-</h2>
 
-
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">19 Agosto 2025 Mattina</h2>
-<h2 class="Dettagli"> - Partenza per YOSEMITE National Park (3h 30 min)</h2>
+<h2 class="Dettagli">- Partenza per YOSEMITE National Park (3h 30 min)</h2>
 <!-- ########################################################################### -->
 
 <!-- PARCHI -->
-<h1 class="SottoTitolo">Visita ai parchi</h1>
-<h2 class="Data">19 Agosto 2025</h2>
+<h1 class="SottoTitolo">Visita ai parchi 19 -21 Agosto</h1>
+<h2 class="Data">19 Agosto 2025 (giornata cuscinetto)</h2>
 <h2>
-  <a href="https://www.nps.gov/yose/planyourvisit/reservations.htm">
-  Visita a YOSEMITE National Park (se possibile)
+  <a href="https://www.nps.gov/yose/planyourvisit/reservations.htm" class="Dettagli_link">
+  - Visita a YOSEMITE National Park (se possibile)
   </a>
   </h2>
   <h2 class="Dettagli"> <a href="https://www.nps.gov/yose/planyourvisit/summer.htm">Informazioni per visita del parco in estate</a></h2>
-<h2 class="Data">19 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
-<h2>
-  <a href="https://www.nationalparkreservations.com/lodge/yosemite-view-lodge/#">
+
+<h2 class="Checkin"> HOTEL YOSEMITE - Fare check in dalle 4pm</h2>	
+  <a href="https://www.nationalparkreservations.com/lodge/yosemite-view-lodge/#" class="Hotel">
   Pernottamento HOTEL Yosemite View Lodge - 11136 Highway 140, El Portal, CA 95318-Prenotato con booking.com
-  
   </a>
-  </h2>
-  <h2 class="Dettagli"> - Check-in: dalle 4pm </h2>	
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
+  
   <h2 class="Data">20 Agosto 2025</h2>		
   <h2>
-    <a href="https://www.nps.gov/yose/planyourvisit/reservations.htm">
-    Visita a YOSEMITE National Park
+    <a href="https://www.nps.gov/yose/planyourvisit/reservations.htm" class="Dettagli_link">
+    - Visita a YOSEMITE National Park
   </a>
   </h2>
-  <h2 class="Dettagli"> - Sera: partenza per Sequoia ore xx:xx </h2>
-  <h2 class="Dettagli"> - Tempo di viaggio per Sequoia 2h 20 min</h2>
-  <h2 class="Data">20 Agosto 2025</h2>
-  <h2 class="Dettagli">Cena (da prenotare)</h2>		
-  <h2>
-    <a href="https://www.nationalparkreservations.com/lodge/sequoiakingscanyon-john-muir-lodge/#property-header-menu">
-    Pernottamento Hotel John Muir Lodge - 86728 Highway 180, Sequoia and Kings Canyon National Park, CA 93633-Prenotato con expedia.com
+  <h2 class="Dettagli"> - Sera: partenza per Sequoia ore xx:xx (Tempo di viaggio 2h 20 min)</h2>
     
-   </a>
-   </h2>
-  <h2 class="Dettagli"> - (Check-in: dalle 4pm )</h2>
+  <h2 class="Checkin">HOTEL SEQUOIA - Fare check in dalle 4pm</h2>
+  <a href="https://www.nationalparkreservations.com/lodge/sequoiakingscanyon-john-muir-lodge/#property-header-menu"
+  class="Hotel">
+  Pernottamento Hotel John Muir Lodge - 86728 Highway 180, Sequoia and Kings Canyon National Park, CA 93633-Prenotato con expedia.com
+  </a>
+  <h2 class="Dettagli">- Cena (da prenotare)</h2>		
+     
   <h2 class="Data">21 Agosto 2025</h2>		
   <h2>
-    <a href="https://www.nps.gov/seki/planyourvisit/permits.htm">
-    Visita a Sequoia National Park
+    <a href="https://www.nps.gov/seki/planyourvisit/permits.htm" class="Dettagli_link">
+    - Visita a Sequoia National Park
    </a>
   </h2>
   <h2 class="Dettagli"> - Sera: partenza per Los Angeles ore ?</h2>
@@ -240,24 +271,18 @@ Noleggio auto
 <h1 class="SottoTitolo">Los Angeles</h1>
 <h2 class="Data">21 Agosto 2025</h2>
 <h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
-<h2>
-<a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/west-los-angeles/laxwl/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-LAXWL">
+<h2 class="Checkin">HOTEL Santa Monica - Fare check in dalle:</h2>
+<a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/west-los-angeles/laxwl/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-LAXWL"
+class="Hotel">
 Pernottamento HOTEL Santa Monica - 11250 Santa Monica Blvd-Prenotato con hotels.com
 </a>
-</h2>
-<h2 class="Dettagli">(Check-in:)</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
+
 <h2 class="Data">22 Agosto 2025</h2>
-<h2 class="Dettagli">Passeggiata a Venice Beach</h2>
-<h2 class="Dettagli">Rodeo Drive</h2>
-<h2 class="Dettagli">Hollywood Boulevard e passaggiata verso Sunset Boulevard</h2>
-<h2 class="Dettagli">Osservatorio Griffith (Scritta Hollywood)</h2>
-
-
-
-
-
-
+<h2 class="Dettagli">- Passeggiata a Venice Beach</h2>
+<h2 class="Dettagli">- Rodeo Drive</h2>
+<h2 class="Dettagli">- Hollywood Boulevard e passaggiata verso Sunset Boulevard</h2>
+<h2 class="Dettagli">- Osservatorio Griffith (Scritta Hollywood)</h2>
 <!-- ########################################################################### -->
 
 <!-- VOLO INTERNO -->
@@ -282,26 +307,31 @@ Trip Prenotazione num  1381025083538633 - PIN 8270
 <!-- NEW YORK -->
 <h1 class="SottoTitolo">New York</h1>
 <h2 class="Data">23 Agosto 2025</h2>
-<h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
-<h2>
-<a href="https://www.hilton.com/en/hotels/nycffhx-hampton-manhattan-times-square-central/?SEO_id=GMB-AMER-HX-NYCFFHX&y_source=1_MjQ0MjgxOS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D">
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Checkin">HOTEL New York - Fare check in dalle 3pm</h2>
+<a href="https://www.hilton.com/en/hotels/nycffhx-hampton-manhattan-times-square-central/?SEO_id=GMB-AMER-HX-NYCFFHX&y_source=1_MjQ0MjgxOS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+class="Hotel">
 Check in HOTEL Hampton Inn Times Square Central - 220 West 41st Street, New York, NY 10036-Prenotato con booking.com
 </a>
-</h2>
-<h2 class="Dettagli"> -Check-in: 3pm Check-out: 11am</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">24 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">25 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">26 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">27 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">28 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <h2 class="Data">29 Agosto 2025</h2>
-<h2 class="Dettagli">Cena (da prenotare)</h2>
+<h2 class="Dettagli">- Attivita' varie</h2>
+<h2 class="Dettagli">- Cena (da prenotare)</h2>
 <!-- ########################################################################### -->
 
 <!-- VOLO DI RITORNO -->
