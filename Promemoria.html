@@ -16,11 +16,12 @@ body {
       
     }
 h1   {
-      color: rgb(2, 1, 20); 
-      background-color: rgb(210, 224, 3);
+      color: rgb(17, 3, 206); 
+      background-color: rgb(83, 245, 9);
       font-size: small;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+      text-align: center;
+}
 h2   {
       color: rgb(3, 3, 3);
       font-size: small;
@@ -47,18 +48,29 @@ p    {
 a   {
      color: blue; /* Initial color of the link */
      text-decoration: none; /* Remove underline */
-     font-size: smaller; 
+     font-size: small; 
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     margin: 20px;
-     justify-content: left; /* Center content horizontally */
-     align-items: left; /* Center content vertically */
+     margin: 0px;
+     margin-left: 5px;
+     font-weight: 500;
+   
     }
-        
+
 
 </style>
 </head>
 <style>
-   
+    .Titolo {
+      background-color: rgb(40, 7, 186);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: white;
+      border: 2px solid black;
+      margin: 0px;
+      padding: 20px;
+      display: flex; /* Enable flexbox */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+    }
     .SottoTitolo {
       background-color: rgb(7, 186, 28);
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -108,10 +120,8 @@ a   {
       height: 110%; /* Maintains aspect ratio */
       margin: 0px;
       margin-top: 0px;
-    
-
-
     }
+
     .Hotel {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-style: italic;
@@ -141,35 +151,81 @@ a   {
       align-items: left; /* Center content vertically */
       
     }
+  
+  .checkbox {
+    width: 20px; /* Set desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 4px;
+
+  }
 
 </style>
 <body>
-  <!--<h1 class="Titolo">Viaggio U.S.A 2025 - Distanze e tempi di percorrenza</h1>-->
-<img src=./img/top-distanze.png class="flag" >
+  <!-- <h1 class="Titolo">Viaggio U.S.A 2025 - Promemoria</h1>-->
+
+<img src=./img/top-promemoria.png class="flag" >
 <hr>
 <a href="index.html"><button>HOME</button></a>
 <hr>
 
-<h1>San Francisco -> Half Moon Bay:</h1>
-<h2>Tramite US101 panoramica - 29,6 miglia (47,6 Km) - 35 min</h2>
-<hr>
-<h1>Half Moon Bay -> Stanford University:</h1>
-<h2>20,7 miglia (33,3 Km) - 26 min</h2>
-<hr>
-<h1>Stanford University -> Carmel by the sea:</h1>
-<h2>86 miglia (138,4 Km) - 1h 26 min</h2>
-<hr>
-<h1>Carmel by the sea -> Monterey:</h1>
-<h2>4,2 miglia (6,7 Km) - 9 min</h2>
-<hr>
-<h1>Monterey -> HOTEL Yosemite:</h1>
-<h2>185 miglia (297,97 Km) - 3h 30 min</h2>
-<hr>
-<h1>HOTEL Yosemite -> HOTEL Sequoia:</h1>
-<h2>163 miglia (262,2 Km) - 3h 9 min</h2>
-<hr>
-<h1>HOTEL Sequoia -> Santa Monica:</h1>
-<h2>240 miglia (386,2 Km) - 4h</h2>
+<h1>ELENCO ATTIVITA' IN SOSPESO</h1>
+<table>
+  <tr>
+    <td><img src="./img/checkbox_spunta.png"  class="checkbox"></td><td><h2>- Prenotazione Voli</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_spunta.png"  class="checkbox"></td><td><h2>- Prenotazione Hotels</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Assicurazione sanitaria</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><a href="https://esta.cbp.dhs.gov/">- ESTA</h2></a>&nbsp;&nbsp;&nbsp;<button><a href="https://youtu.be/wIxm9gtz9kc">Video</a></button><td></td>
+  </tr>
+  
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td> <td><a href="https://www.revolut.com/it-IT/bank-account/">- Revolut (carta di credito virtuale per U.S.A) </a></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Prenotare parcheggio a Linate</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Noleggio auto a San Francisco con consegna a aeroporto LAX</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Visita ad Alcatraz</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Yosemite National Park</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Sequoia National Park</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Check-in volo Milano-Roma-San Francisco</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Check-in volo Los Angeles-New York</h2></td>
+  </tr>
+
+  <tr>
+    <td><img src="./img/checkbox_wo_spunta.png"  class="checkbox"></td><td><h2>- Check-in volo New York-Copenaghen-Milano</h2></td>
+  </tr>
+
+
+</table>
+
+
 
 
 </body>
