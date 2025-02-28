@@ -276,7 +276,7 @@ a   {
 .checkbox {
     width: 20px; /* Set desired width */
     height: auto; /* Maintain aspect ratio */
-    margin-left: 4px;
+    margin-left: 2px;
 
   }
 .h1_other_page   {
@@ -286,4 +286,10 @@ a   {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-
+  .h2_prom   {
+    color: rgb(3, 3, 3);
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1px;
+    
+  }
