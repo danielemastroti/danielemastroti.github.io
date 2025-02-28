@@ -299,4 +299,6 @@ a   {
     height: 100%; /* Maintains aspect ratio */
     margin: 0px;
     margin-top: 0px;
+    justify-content: center;
+
   }
