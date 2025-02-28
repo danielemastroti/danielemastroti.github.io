@@ -243,6 +243,7 @@ a   {
   .table_voli {
     
       width: 50%;
+      border: none;
       border-collapse: collapse;
       margin: 10px 0;
       font-size: 18px;
