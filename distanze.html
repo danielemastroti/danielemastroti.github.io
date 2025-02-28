@@ -8,153 +8,9 @@
     <meta http-equiv="Cache-Control" content="no-store">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-
-<style>
-
-body {
-      background-color: rgb(201, 235, 239);
-      
-    }
-h1   {
-      color: rgb(2, 1, 20); 
-      background-color: rgb(210, 224, 3);
-      font-size: small;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-h2   {
-      color: rgb(3, 3, 3);
-      font-size: small;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      margin: 5px;
-      
-    }
-h3   {
-      color: rgb(0, 30, 255);
-      font-size: small;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      padding: 0px; 
-    
-    }
-p    {
-      color: rgb(6, 10, 248);
-      font-size: small;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      padding: 2px;
-      margin: 20px;
-      
-    }
-
-a   {
-     color: blue; /* Initial color of the link */
-     text-decoration: none; /* Remove underline */
-     font-size: smaller; 
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     margin: 20px;
-     justify-content: left; /* Center content horizontally */
-     align-items: left; /* Center content vertically */
-    }
-.a_menu   {
-      color: blue; /* Initial color of the link */
-      text-decoration: none; /* Remove underline */
-      font-size: medium; 
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      margin: 20px;
-      justify-content: left; /* Center content horizontally */
-      align-items: left; /* Center content vertically */
-     }
-        
-
-</style>
-</head>
-<style>
-   
-    .SottoTitolo {
-      background-color: rgb(7, 186, 28);
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-size: larger;
-      color: white;
-      border: 1px solid black;
-      margin: 0px;
-      padding: 5px;
-      display: flex; /* Enable flexbox */
-      justify-content: left; /* Center content horizontally */
-      align-items: left; /* Center content vertically */
-    }
-    .Dettagli {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-weight: 500;
-      color: rgb(13, 13, 13);
-      margin: 30px;
-      padding-left: 5px;
-      line-height: .1px;
-      justify-content: left; /* Center content horizontally */
-      align-items: left; /* Center content vertically */
-    }
-    .Dettagli_link {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-weight: 600;
-      color: rgb(232, 5, 5);
-      margin: 30px;
-      padding-left: 5px;
-      line-height: .1px;
-      justify-content: left; /* Center content horizontally */
-      align-items: left; /* Center content vertically */
-    }
-    .Data {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-style: italic;
-      text-decoration: underline;
-      color: rgb(0, 0, 0);
-      margin: 20px;
-      padding: 5px;
-      padding-left: 16px;
-      line-height: .1px;
-      justify-content: left; /* Center content horizontally */
-      align-items: left; /* Center content vertically */
-    }
-    .flag {
-      width: 100%; /* Sets the width of the image */
-      height: 110%; /* Maintains aspect ratio */
-      margin: 0px;
-      margin-top: 0px;
-    
+    <link rel="stylesheet" href="style.css">
 
 
-    }
-    .Hotel {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-style: italic;
-      font-size: 12px;
-      color: rgb(9, 5, 249);
-      margin: 0px;
-      padding-left: 2px;
-      justify-content: left; /* Center content horizontally */
-      align-items: left; /* Center content vertically */
-      line-height: .5px;
-      word-wrap:break-word;
-      
-    }
-    
-    .Hotel:hover {
-           color: red; /* Color of the link when hovered */
-        }
-    .Checkin {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-style: italic;
-      font-size: 12px;
-      color: rgb(48, 99, 0);
-      margin: 30px;
-      padding-left: 2px;
-      line-height: 1px;
-      justify-content: left; /* Center content horizontally */
-      align-items: left; /* Center content vertically */
-      
-    }
-    .menu_td {
-      padding: 15px;
-    }
-
-</style>
 <body>
   <!--<h1 class="Titolo">Viaggio U.S.A 2025 - Distanze e tempi di percorrenza</h1>-->
 <img src="./img/banner_distanze.jpg?version=1.1" class="flag" >
@@ -168,25 +24,25 @@ a   {
 </table>
 <hr>
 
-<h1>San Francisco -> Half Moon Bay:</h1>
+<h1 class="h1_other_page">San Francisco -> Half Moon Bay:</h1>
 <h2>Tramite US101 panoramica - 29,6 miglia (47,6 Km) - 35 min</h2>
 <hr>
-<h1>Half Moon Bay -> Stanford University:</h1>
+<h1 class="h1_other_page">Half Moon Bay -> Stanford University:</h1>
 <h2>20,7 miglia (33,3 Km) - 26 min</h2>
 <hr>
-<h1>Stanford University -> Carmel by the sea:</h1>
+<h1 class="h1_other_page">Stanford University -> Carmel by the sea:</h1>
 <h2>86 miglia (138,4 Km) - 1h 26 min</h2>
 <hr>
-<h1>Carmel by the sea -> Monterey:</h1>
+<h1 class="h1_other_page">Carmel by the sea -> Monterey:</h1>
 <h2>4,2 miglia (6,7 Km) - 9 min</h2>
 <hr>
-<h1>Monterey -> HOTEL Yosemite:</h1>
+<h1 class="h1_other_page">Monterey -> HOTEL Yosemite:</h1>
 <h2>185 miglia (297,97 Km) - 3h 30 min</h2>
 <hr>
-<h1>HOTEL Yosemite -> HOTEL Sequoia:</h1>
+<h1 class="h1_other_page">HOTEL Yosemite -> HOTEL Sequoia:</h1>
 <h2>163 miglia (262,2 Km) - 3h 9 min</h2>
 <hr>
-<h1>HOTEL Sequoia -> Santa Monica:</h1>
+<h1 class="h1_other_page">HOTEL Sequoia -> Santa Monica:</h1>
 <h2>240 miglia (386,2 Km) - 4h</h2>
 
 
