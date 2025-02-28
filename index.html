@@ -258,6 +258,44 @@ a   {
     
 
 </style>
+<style>
+  .table_voli {
+    
+      width: 50%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 18px;
+      text-align: left;
+  }
+
+  th, td {
+      border: 1px solid #ddd;
+      padding: 5px;
+  }
+  tr {
+    font-size: 15px;  /* Cambia la dimensione del testo */
+    font-family: Arial, sans-serif; /* Cambia il font */
+    font-weight: bold; /* Rende il testo in grassetto */
+    text-align: left; /* Allinea il testo al centro */
+
+}
+
+.trip {
+  color: blue; /* Initial color of the link */
+  background-color:cyan;
+  text-decoration: none; /* Remove underline */
+  font-size: large; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 5px;
+  justify-content: left; /* Center content horizontally */
+  align-items: left; /* Center content vertically */
+
+}
+
+
+
+  
+</style>
 <body>
 
 <!--<h1 class="Titolo">Viaggio U.S.A 2025 - Link utili</h1>-->
@@ -266,7 +304,7 @@ a   {
 <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" class="flag" alt="USA Flag">-->
 <img src="./img/banner_programma.jpg?version=1.1" class="flag" >
 <hr>
-<table>
+<table class="table_voli">
   <tr>
     <td class="menu_td"><a class="a_menu" href="index.html">HOME</a></td>
     <td class="menu_td"><a class="a_menu" href="distanze.html">DISTANZE</a></td>
@@ -277,7 +315,8 @@ a   {
 
 <!-- VOLI DI ANDATA  -->
 <h1 class="SottoTitolo">Voli di andata (Giovedi' 14 Agosto)</h1>
-<a href="https://it.trip.com/online/orderdetail/
+<img src="./img/airplane.png" height="10%" width="10%"><br>
+<a class="trip" href="https://it.trip.com/online/orderdetail/
 index?oid=1381025083672841&source=bookings&channel=bookings&subChannel=
 tripcard&flightsignature=H4sIAAAAAAAA_4uuVirOTM_zS8xNVbJSSsvJTM8o0U1KS1PSAYuHJeaUgiQMjS0MDYxMDSyMzcyNLEwModKJJ
 aVFIGlHR1dHx0BH76jcioIoowwDn3Cv3Kgy4yLzjArXqHDDoixL42yv8MCAigzHQg-TEu9sH5_0oMy8iEwDc7fC5CQX3ZKizAKQgUq1sQAzH6c1
@@ -290,19 +329,29 @@ ITA Airways AZ2013 - Milano Linate -> Roma Fiumicino T1
 </a>
 
 <div class="Data">14 Agosto 2025</div>
-<h2 class="Dettagli">Partenza ore 07:00</h2>
-<h2 class="Dettagli">Arrivo ore 08:10</h2>
-<h2 class="Dettagli">Durata 1h 10 min</h2>
+
+<table class="table_voli">
+    <tr><td>Partenza ore 07:00</td></tr>
+    <tr><td>Arrivo ore 08:10</td></tr>
+    <tr><td>Durata 1h 10 min</td></tr>
+</table>
+<br>
+
 
 <a href="https://it.trip.com/actualtime/detail?flightNo=AZ640&departCity=FCO&arriveCity
 =SFO&date=2025-08-14&locale=it-IT&curr=EUR" class="Voli">
 ITA Airways AZ640 ->Roma Fiumicino - SFO Aeroporto internazionale di S.Francisco
 </a>
 
-<h2 class="Data">14 Agosto 2025</h2>
-<h2 class="Dettagli">Partenza ore 09:10</h2>    
-<h2 class="Dettagli">Arrivo ore 13:15</h2>  
-<h2 class="Dettagli">Durata 13h 5 min</h2>  
+<div class="Data">14 Agosto 2025</div>
+<table class="table_voli">
+  <tr><td>Partenza ore 09:10</td></tr>
+  <tr><td>Arrivo ore 13:15</td></tr>
+  <tr><td>Durata 13h 5 min</td></tr>
+</table>
+<br>
+
+
 
 <!-- SAN FRANCISCO -->
 <h1 class="SottoTitolo">San Francisco (Giovedi' 14 - Lunedi' 18 Agosto)</h1>
@@ -468,7 +517,8 @@ HOTEL: Santa Monica - 11250 Santa Monica Blvd - Prenotato con hotels.com
 <br>
 <!-- VOLO INTERNO -->
 <h1 class="SottoTitolo">Volo interno (Venerdi' 22 Agosto)</h1>
-<a href="https://it.trip.com/online/orderdetail/index?oid=1381025083538633&source=bookings&channel=
+<img src="./img/airplane.png" height="10%" width="10%"><br>
+<a class="trip" href="https://it.trip.com/online/orderdetail/index?oid=1381025083538633&source=bookings&channel=
 bookings&subChannel=tripcard&flightsignature=H4sIAAAAAAAA_4uuVirOTM_zS8xNVbJSSsvJTM8o0U1KS1PSAYuHJeaUgiQMjS0MDYxMDSyMTY0tzIyNodKJJ
 aVFIGlHR1dHx0BH76jcioIoowwDn3Cv3Kj0IH9Tv0LvEhOLApN88-zs9KhCo6SqLMco1zK_VDO3sOII0wLPQAtvT-8k3ZKizAKQgUq1sQCh4E04kgAAAA&curr=EUR&
 locale=it-IT" class="Hotel">
@@ -480,9 +530,14 @@ Delta Airways DL676 - Los Angelex (LAX) -> New York (JFK T4)
 </a>
 
 <div class="Data">22 Agosto 2025</div>
-<h2 class="Dettagli">Partenza ore 22:59</h2>
-<h2 class="Dettagli">Arrivo ore 07:22 (23 Agosto)</h2>
-<h2 class="Dettagli">Durata 5h 23 min</h2>
+<table class="table_voli">
+  <tr><td>Partenza ore 22:59</td></tr>
+  <tr><td>Arrivo ore 07:22 (23 Agosto)</td></tr>
+  <tr><td>Durata 5h 23 min</td></tr>
+</table>
+<br>
+
+
 <!-- ########################################################################### -->
 
 <!-- NEW YORK -->
@@ -523,7 +578,8 @@ HOTEL: Hampton Inn Times Square Central - 220 West 41st Street, New York, NY 100
 <br>
 <!-- VOLO DI RITORNO -->
 <h1 class="SottoTitolo">Volo di ritorno (Sabato 29 Agosto)</h1>
-<a href="https://it.trip.com/online/orderdetail/index?oid=1381025082662025&source=bookings&channel=
+<img src="./img/airplane.png" height="10%" width="10%"><br>
+<a class="trip" href="https://it.trip.com/online/orderdetail/index?oid=1381025082662025&source=bookings&channel=
 bookings&subChannel=tripcard&flightsignature=H4sIAAAAAAAA_4uuVirOTM_zS8xNVbJSSsvJTM8o0U1KS1PSAYuHJeaUgiQMjS0MDYxMDSyMzMyMgAyodGJJ
 aRFI2tHR1dEx0NE7KreiIMoow8An3Cs3qqAiqzSzJN89qzC0xDs1MCxLt9zcyS8xKz-5PMPdNc8ysMrIstgyP97Tw1e3pCizAGSgUm0sAGG40lWSAAAA-split-
 AAEAAQAPZmxpZ2h0c2lnbmF0dXJl2wQtRj1F4uyMF7HNAI2Dzs1SNiPosnZ3hDe7XexItM0&curr=EUR&locale=it-IT" class="Hotel">
@@ -534,16 +590,24 @@ Trip Prenotazione num  1381025082662025 - PIN 1237
   Scandinavian Airlines SK916 - New York (JFK) -> Copenaghen Kastrup T3
 </a>
 <div class="Data">29 Agosto 2025</div>
-<h2 class="Dettagli">Partenza ore 18:55</h2>
-<h2 class="Dettagli">Arrivo ore 08:40 (30 Agosto)</h2>
-<h2 class="Dettagli">Durata 7h 45 min</h2>
+
+<table class="table_voli">
+  <tr><td>Partenza ore 18:55</td></tr>
+  <tr><td>Arrivo ore 08:40 (30 Agosto)</td></tr>
+  <tr><td>Durata 7h 45 min</td></tr>
+</table>
+<br>
+
 <a href="https://it.trip.com/actualtime/detail?flightNo=SK1687&departCity=CPH&arriveCity=LIN&date=2025-08-30&locale=it-IT&curr=EUR" class="Voli">
 Scandinavian Airlines SK1687 - Copenaghen Kastrup T3 -> Milano Linate
 </a>
   <div class="Data">30 Agosto 2025</div>
-  <h2 class="Dettagli">Partenza ore 11:50</h2>
-  <h2 class="Dettagli">Arrivo ore 13:55</h2>
-  <h2 class="Dettagli">Durata 2h 5 min</h2>
+  <table class="table_voli">
+    <tr><td>Partenza ore 11:50</td></tr>
+    <tr><td>Arrivo ore 13:55</td></tr>
+    <tr><td>Durata 2h 5 min</td></tr>
+  </table>
+
 <!-- ########################################################################### -->
 
 </body>
