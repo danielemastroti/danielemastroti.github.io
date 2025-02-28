@@ -251,7 +251,7 @@ a   {
   }
 
   th, td {
-      border: 1px solid #ddd;
+      border: 0px solid #ddd;
       padding: 5px;
   }
   tr {
@@ -263,7 +263,7 @@ a   {
 }
 
 .trip {
-  color: blue; /* Initial color of the link */
+  color: rgb(1, 1, 82); /* Initial color of the link */
   background-color:cyan;
   text-decoration: none; /* Remove underline */
   font-size: medium; 
@@ -303,3 +303,5 @@ a   {
     justify-content: center;
 
   }
+
+  
