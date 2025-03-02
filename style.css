@@ -297,7 +297,7 @@ a   {
 
   .img_voli {
     width: 90%; /* Sets the width of the image */
-    height: 90vh;           /* Makes the container take full height of the viewport */
+    height: 90%;           /* Makes the container take full height of the viewport */
     margin: 0px;
     margin-top: 0px;
     justify-content: center;
