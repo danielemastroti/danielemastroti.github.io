@@ -296,8 +296,8 @@ a   {
   }
 
   .img_voli {
-    width: 100%; /* Sets the width of the image */
-    height: 100%; /* Maintains aspect ratio */
+    width: 90%; /* Sets the width of the image */
+    height: 90%; /* Maintains aspect ratio */
     margin: 0px;
     margin-top: 0px;
     justify-content: center;
