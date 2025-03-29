@@ -224,7 +224,7 @@ a   {
       margin-left: 1px;
     }
     .button_menu {
-      margin-left: 10px;
+      margin-left: 20px;
     }
     
     .menu_td {
@@ -237,7 +237,7 @@ a   {
     text-decoration: none; /* Remove underline */
     font-size: 12px; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 20px;
+    margin: 10px;
     justify-content: left; /* Center content horizontally */
     align-items: left; /* Center content vertically */
    }
