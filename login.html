@@ -58,8 +58,9 @@
             
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
-                    document.getElementById("status").innerText = `Logged in: ${userCredential.user.email}`;
-                    window.location.href = "documenti.html";
+                       // Redirect to the protected page after successful login
+                    window.location.href = "documenti.html"; 
+                    
                     
                 })
                 .catch((error) => {
