@@ -13,6 +13,30 @@
 
 
 <body>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+
+    const firebaseConfig = {
+            apiKey: "AIzaSyBwCgZVEV3CLUhOCmZMvlX0xRhHa8hp2bY",
+            authDomain: "github-web-9f2b4.firebaseapp.com",
+            projectId: "github-web-9f2b4",
+            storageBucket: "github-web-9f2b4.firebasestorage.app",
+            messagingSenderId: "487807075973",
+            appId: "1:487807075973:web:625a3664febda073428bec"
+        };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, (user) => {
+        if (!user) {
+            // Redirect to login page if not logged in
+            window.location.href = "login.html"; // Change this to your actual login page
+        }
+    });
+</script>
+
 <img src="./img/banner_documenti.png?version=1.1" class="flag" >
 <hr>
 <table class="table_menu">
