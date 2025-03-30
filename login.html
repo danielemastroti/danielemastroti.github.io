@@ -1,0 +1,64 @@
+!DOCTYPE html>
+<html>
+<title>Viaggio U.S.A. 2025</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10"> 
+    <!-- Prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="style.css">
+
+
+<body>
+
+
+
+<div id="sign-up">
+  <h2>Sign Up</h2>
+  <input type="email" id="sign-up-email" placeholder="Email" />
+  <input type="password" id="sign-up-password" placeholder="Password" />
+  <button onclick="signUp()">Sign Up</button>
+</div>
+
+
+<script>
+function signUp() {
+  const email = document.getElementById('sign-up-email').value;
+  const password = document.getElementById('sign-up-password').value;
+
+  auth.createUserWithEmailAndPassword(email, password)
+    .then(userCredential => {
+      console.log("Signed up:", userCredential.user);
+      alert("Sign up successful!");
+    })
+    .catch(error => {
+      console.error(error);
+      alert(error.message);
+    });
+}
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBwCgZVEV3CLUhOCmZMvlX0xRhHa8hp2bY",
+    authDomain: "github-web-9f2b4.firebaseapp.com",
+    projectId: "github-web-9f2b4",
+    storageBucket: "github-web-9f2b4.firebasestorage.app",
+    messagingSenderId: "487807075973",
+    appId: "1:487807075973:web:625a3664febda073428bec"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+</body>
+</html>
