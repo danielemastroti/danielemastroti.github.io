@@ -59,6 +59,8 @@
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     document.getElementById("status").innerText = `Logged in: ${userCredential.user.email}`;
+                    window.location.href = "documenti.html";
+                    
                 })
                 .catch((error) => {
                     alert(error.message);
