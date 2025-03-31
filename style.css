@@ -235,9 +235,9 @@ a   {
   .a_menu   {
     color: blue; /* Initial color of the link */
     text-decoration: none; /* Remove underline */
-    font-size: 12px; 
+    font-size: 11px; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 10px;
+    margin: 5px;
     justify-content: left; /* Center content horizontally */
     align-items: left; /* Center content vertically */
    }
