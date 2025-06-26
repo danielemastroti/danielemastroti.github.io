@@ -45,6 +45,20 @@ a   {
      align-items: center; /* Center content vertically */
     }
 
+     .TitoloPromemoria {
+      background-color: rgb(6, 70, 245);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      border: 1px solid black;
+      margin: 0px;
+      padding: 5px;
+      display: flex; /* Enable flexbox */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+    }
+
 
     .SottoTitolo {
       background-color: rgb(7, 186, 28);
@@ -59,6 +73,8 @@ a   {
       justify-content: left; /* Center content horizontally */
       align-items: left; /* Center content vertically */
     }
+
+
     .Dettagli {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-weight: 500;
