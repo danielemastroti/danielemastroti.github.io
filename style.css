@@ -43,6 +43,7 @@ a   {
      margin: 0px;
      justify-content: center; /* Center content horizontally */
      align-items: center; /* Center content vertically */
+     word-wrap:break-word
     }
 
      .TitoloPromemoria {
