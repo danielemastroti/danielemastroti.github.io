@@ -40,7 +40,7 @@ a   {
      text-decoration: none; /* Remove underline */
      font-size: small; 
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     margin: 0px;
+     margin: 20px;
      justify-content: center; /* Center content horizontally */
      align-items: center; /* Center content vertically */
      word-wrap:break-word
