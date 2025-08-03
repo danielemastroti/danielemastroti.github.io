@@ -208,6 +208,20 @@ a   {
       padding-left: 33px;
       text-decoration: underline;
     }
+
+    .ebike_sfo {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: italic;
+      font-size: medium;
+      text-align: left;
+      color: rgb(240, 2, 2);
+      padding-left: 33px;
+      
+    }
+
+
+
+
     .item {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-style: italic;
