@@ -225,11 +225,11 @@ a   {
       font-size: small;
       font-weight: 600;
       text-align: left;
-      color: rgb(254, 237, 2);
+      color: rgb(0, 0, 0);
       padding-left: 30px;
       margin: 1px;
       word-wrap:break-word;
-      background-color: rgb(3, 77, 224);
+      background-color: #abcdefaa;
     
     }
 
