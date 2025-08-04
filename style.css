@@ -219,7 +219,19 @@ a   {
       
     }
 
-
+     .note {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: italic;
+      font-size: small;
+      font-weight: 600;
+      text-align: left;
+      color: rgb(254, 237, 2);
+      padding-left: 30px;
+      margin: 1px;
+      word-wrap:break-word;
+      background-color: rgb(3, 77, 224);
+    
+    }
 
 
     .item {
@@ -232,9 +244,6 @@ a   {
       padding-left: 30px;
       margin: 1px;
       word-wrap:break-word
-
-
-      
     
     }
     .blink {
