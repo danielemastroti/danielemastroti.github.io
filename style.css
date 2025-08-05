@@ -60,6 +60,11 @@ a   {
       align-items: center; /* Center content vertically */
     }
 
+    .Table_info {
+      border: 1px solid black;
+
+    }
+
 
     .SottoTitolo {
       background-color: rgb(7, 186, 28);
@@ -231,7 +236,7 @@ a   {
       /*padding-left: 30px;*/
       margin: 6px;
       word-wrap:break-word;
-      background-color: #abcdefaa;
+      background-color: #faf604aa;
     
     }
 
