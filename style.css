@@ -28,8 +28,8 @@ p    {
       color: rgb(248, 6, 6);
       font-size: small;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      margin: 30px;
-      padding-left: 5px;
+      /*margin: 30px;*/
+      padding-left: 30px;
       line-height: .1px;
       justify-content: left; /* Center content horizontally */
       align-items: left; /* Center content vertically */
