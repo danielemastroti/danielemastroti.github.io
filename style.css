@@ -65,6 +65,10 @@ a   {
 
     }
 
+    .red_line {
+      style {height:2px;border-width:0;color:gray;background-color:rgb(243, 2, 2)}
+    }
+
 
     .SottoTitolo {
       background-color: rgb(7, 186, 28);
