@@ -231,12 +231,12 @@ a   {
       font-style: italic;
       font-size: small;
       font-weight: 600;
-      text-align: left;
+      text-align: center;
       color: rgb(0, 0, 0);
       /*padding-left: 30px;*/
-      margin: 6px;
+      margin: 0px;
       word-wrap:break-word;
-      background-color: #faf604aa;
+      background-color: #fa8704fd;
     
     }
 
