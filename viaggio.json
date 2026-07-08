@@ -35,6 +35,41 @@
           "maps": "https://maps.google.com/?q=Au+Crocodile"
         }
       ]
+    },
+     {
+      "giorno": "2 - 16-08-2026", 
+      "data": "15-08-2026",
+      "mattino": [
+        {
+          "ora": "11:00",
+          "nome": "Colmar - Arrivo e sistemazione",
+          "maps": "https://maps.google.com/?q=Colmar"
+         
+        },
+
+        {
+          "ora": "13:00",
+          "nome": "Colmar - Pranzo",
+          "maps": "https://maps.google.com/?q=Colmar"
+        }
+
+
+      ],
+      "pomeriggio": [
+        {
+          "ora": "15:00",
+          "nome": "Passeggiata centro storico",
+          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg",
+        
+        }
+      ],
+      "sera": [
+        {
+          "ora": "19:00",
+          "nome": "Au Crocodile",
+          "maps": "https://maps.google.com/?q=Au+Crocodile"
+        }
+      ]
     }
   ]
 }
