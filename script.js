@@ -8,6 +8,11 @@ fetch('viaggio.json').then(r=>r.json()).then
         let c=document.createElement('div');
         c.className='c';
         h.onclick=()=>c.classList.toggle('open');
+        
         ['mattino','pomeriggio','sera'].forEach(s=>{c.innerHTML+='<h3>'+s+'</h3>';
-             (g[s]||[]).forEach(t=>{c.innerHTML+=`<div><b>${t.ora}</b> ${t.nome} <a target=_blank href="${t.maps}">Maps</a></div>`})});
-             day.append(h,c);root.append(day);});});
+             (g[s]||[]).forEach(t=>{c.innerHTML+=`<div><b>${t.ora}</b> ${t.nome} 
+                <a target=_blank href="${t.maps}">Maps</a></div>`})});
+             day.append(h,c);
+             root.append(day);
+            });
+        });
