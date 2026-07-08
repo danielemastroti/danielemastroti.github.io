@@ -1,17 +1,44 @@
 {
-  "titolo": "Viaggio Demo",
+  "titolo": "Francia e Germania - Agosto 2026",
   "giorni": [
     {
       "giorno": 1,
+      "data": "2026-08-10",
+      "hotel": {
+        "nome": "Mercure Strasbourg Centre",
+        "indirizzo": "Strasbourg"
+      },
+      "totaleKm": 180,
+      "totaleTempo": "3h 20m",
       "mattino": [
         {
           "ora": "09:00",
           "nome": "Colmar",
-          "maps": "https://maps.google.com/?q=Colmar"
+          "tipo": "attrazione",
+          "maps": "https://maps.google.com/?q=Colmar",
+          "kmSuccessivo": 18,
+          "tempoSuccessivo": "22 min",
+          "note": "Passeggiata nel centro storico"
         }
       ],
-      "pomeriggio": [],
-      "sera": []
+      "pomeriggio": [
+        {
+          "ora": "14:00",
+          "nome": "Castello Haut-Koenigsbourg",
+          "tipo": "attrazione",
+          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg",
+          "kmSuccessivo": 62,
+          "tempoSuccessivo": "55 min"
+        }
+      ],
+      "sera": [
+        {
+          "ora": "19:00",
+          "nome": "Au Crocodile",
+          "tipo": "ristorante",
+          "maps": "https://maps.google.com/?q=Au+Crocodile"
+        }
+      ]
     }
   ]
 }
