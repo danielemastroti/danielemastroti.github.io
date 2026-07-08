@@ -126,3 +126,71 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const dati = await response.json();
 
+        document.getElementById("titolo").textContent = dati.titolo;
+
+        const home = document.getElementById("home");
+
+        dati.giorni.forEach(giorno => {
+
+            const card = document.createElement("div");
+            card.className = "giorno";
+
+            card.innerHTML = `
+                <h2>${giorno.giorno}</h2>
+                <div class="data">${giorno.data}</div>
+            `;
+
+            creaSezione("Mattino", giorno.mattino, card);
+            creaSezione("Pomeriggio", giorno.pomeriggio, card);
+            creaSezione("Sera", giorno.sera, card);
+
+            home.appendChild(card);
+
+        });
+
+    }
+    catch (err) {
+
+        console.error(err);
+
+        document.getElementById("home").innerHTML =
+            `<p style="color:red">Errore: ${err.message}</p>`;
+    }
+
+});
+
+function creaSezione(titolo, attivita, contenitore) {
+
+    if (!attivita || attivita.length === 0) return;
+
+    const sezione = document.createElement("div");
+    sezione.className = "sezione";
+
+    let html = `<h3>${titolo}</h3>`;
+
+    attivita.forEach(item => {
+
+        html += `
+            <div class="attivita">
+
+                <div class="ora">${item.ora}</div>
+
+                <div class="nome">
+                    ${item.link}
+                        ${item.nome}
+                    </a>
+                </div>
+
+            </div>
+        `;
+    });
+
+    sezione.innerHTML = html;
+
+    contenitore.appendChild(sezione);
+}
+
+</script>
+
+</body>
+</html>
