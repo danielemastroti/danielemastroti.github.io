@@ -3,31 +3,31 @@
   "giorni": [
     {
       "giorno": "1 - 15-08-2026", 
-      "data": "2026-08-10",
+      "data": "15-08-2026",
       "hotel": {
-        "nome": "Mercure Strasbourg Centre",
-        "indirizzo": "Strasbourg"
+        "nome": "Colmar",
+        "indirizzo": "Colmar"
       },
-      "totaleKm": 180,
-      "totaleTempo": "3h 20m",
+      "totaleKm": 399,
+      "totaleTempo": "4h 40m",
       "mattino": [
         {
-          "ora": "09:00",
+          "ora": "11:00",
           "nome": "Colmar",
-          "tipo": "attrazione",
+          "tipo": "casa",
           "maps": "https://maps.google.com/?q=Colmar",
-          "kmSuccessivo": 18,
+          "kmSuccessivo": 0,
           "tempoSuccessivo": "22 min",
-          "note": "Passeggiata nel centro storico"
+          "note": "Spesa"
         }
       ],
       "pomeriggio": [
         {
-          "ora": "14:00",
-          "nome": "Castello Haut-Koenigsbourg",
+          "ora": "15:00",
+          "nome": "Passeggiata centro storico",
           "tipo": "attrazione",
           "maps": "https://maps.google.com/?q=Haut+Koenigsbourg",
-          "kmSuccessivo": 62,
+          "kmSuccessivo": 0,
           "tempoSuccessivo": "55 min"
         }
       ],
