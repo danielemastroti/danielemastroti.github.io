@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const response = await fetch("viaggio.json");
 
         if (!response.ok) {
-            throw new Error(`Errore caricamento JSON: ${response.status}`);
+            throw new Error(`Errore caricamento JSON (${response.status})`);
         }
 
         const dati = await response.json();
@@ -16,28 +16,34 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         dati.giorni.forEach(giorno => {
 
-            const giornoDiv = document.createElement("div");
-            giornoDiv.className = "giorno";
+            const card = document.createElement("div");
+            card.className = "giorno";
 
-            giornoDiv.innerHTML = `
+            card.innerHTML = `
                 <h2>${giorno.giorno}</h2>
                 <div class="data">${giorno.data}</div>
             `;
 
-            creaSezione("Mattino", giorno.mattino, giornoDiv);
-            creaSezione("Pomeriggio", giorno.pomeriggio, giornoDiv);
-            creaSezione("Sera", giorno.sera, giornoDiv);
+            creaSezione("Mattino", giorno.mattino, card);
+            creaSezione("Pomeriggio", giorno.pomeriggio, card);
+            creaSezione("Sera", giorno.sera, card);
 
-            home.appendChild(giornoDiv);
+            home.appendChild(card);
+
         });
 
-    } catch (err) {
+    } catch (errore) {
 
-        console.error(err);
+        console.error("Errore:", errore);
 
         document.getElementById("home").innerHTML = `
-            <div style="color:red">
-                Errore caricamento dati: ${err.message}
+            <div style="
+                background:#ffe5e5;
+                color:#c00000;
+                padding:15px;
+                border-radius:8px;
+            ">
+                Errore caricamento dati: ${errore.message}
             </div>
         `;
     }
@@ -54,34 +60,32 @@ function creaSezione(titolo, attivita, contenitore) {
     const sezione = document.createElement("div");
     sezione.className = "sezione";
 
-    const htmlAttivita = attivita.map(item => `
+    let html = `<h3>${titolo}</h3>`;
 
-        <div class="attivita">
+    attivita.forEach(item => {
 
-            <div class="ora">
-                ${item.ora}
+        html += `
+            <div class="attivita">
+
+                <div class="ora">
+                    ${item.ora}
+                </div>
+
+                <div class="nome">
+                    ${
+                        item.link
+                        ? `
+                            ${item.link}
+                        `
+                        : item.nome
+                    }
+                </div>
+
             </div>
+        `;
+    });
 
-            <div class="nome">
-
-                ${
-                    item.link
-                    ? `
-                        ${item.link}
-                      `
-                    : item.nome
-                }
-
-            </div>
-
-        </div>
-
-    `).join("");
-
-    sezione.innerHTML = `
-        <h3>${titolo}</h3>
-        ${htmlAttivita}
-    `;
+    sezione.innerHTML = html;
 
     contenitore.appendChild(sezione);
 }
