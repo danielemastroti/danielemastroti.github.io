@@ -2,30 +2,20 @@
   "titolo": "Viaggio - Agosto 2026",
   "giorni": [
     {
-      "giorno": "1 - 15-08-2026", 
+      "giorno": "1 - 15-08-2026",
       "data": "15-08-2026",
       "mattino": [
         {
-          "ora": "11:00",
-          "nome": "Colmar - Arrivo e sistemazione",
-          "maps": "https://maps.google.com/?q=Colmar"
-         
-        },
-
-        {
-          "ora": "13:00",
-          "nome": "Colmar - Pranzo",
-          "maps": "https://maps.google.com/?q=Colmar"
+          "ora": "15:00",
+          "nome": "Passeggiata centro storico",
+          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg"
         }
-
-
       ],
-      "pomeriggio": [
+     "pomeriggio": [
         {
           "ora": "15:00",
           "nome": "Passeggiata centro storico",
-          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg",
-        
+          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg"
         }
       ],
       "sera": [
@@ -37,30 +27,25 @@
       ]
     },
     {
-      "giorno": "2 - 16-08-2026", 
-      "data": "15-08-2026",
+      "giorno": "2 - 16-08-2026",
+      "data": "16-08-2026",
       "mattino": [
         {
           "ora": "11:00",
           "nome": "Colmar - Arrivo e sistemazione",
           "maps": "https://maps.google.com/?q=Colmar"
-         
         },
-
         {
           "ora": "13:00",
           "nome": "Colmar - Pranzo",
           "maps": "https://maps.google.com/?q=Colmar"
         }
-
-
       ],
       "pomeriggio": [
         {
           "ora": "15:00",
           "nome": "Passeggiata centro storico",
-          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg",
-        
+          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg"
         }
       ],
       "sera": [
