@@ -19,7 +19,19 @@
           "kmSuccessivo": 0,
           "tempoSuccessivo": "22 min",
           "note": "Spesa"
+        },
+
+        {
+          "ora": "13:00",
+          "nome": "Pranzo",
+          "tipo": "Pranzo",
+          "maps": "https://maps.google.com/?q=Colmar",
+          "kmSuccessivo": 0,
+          "tempoSuccessivo": "22 min",
+          "note": "Pranzo"
         }
+
+
       ],
       "pomeriggio": [
         {
