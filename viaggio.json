@@ -8,21 +8,21 @@
         {
           "ora": "15:00",
           "nome": "Passeggiata centro storico",
-          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg"
+          "link": "https://link.google.com/?q=Haut+Koenigsbourg"
         }
       ],
      "pomeriggio": [
         {
           "ora": "15:00",
           "nome": "Passeggiata centro storico",
-          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg"
+          "link": "https://link.google.com/?q=Haut+Koenigsbourg"
         }
       ],
       "sera": [
         {
           "ora": "19:00",
           "nome": "Au Crocodile",
-          "maps": "https://maps.google.com/?q=Au+Crocodile"
+          "link": "https://link.google.com/?q=Au+Crocodile"
         }
       ]
     },
@@ -33,26 +33,26 @@
         {
           "ora": "11:00",
           "nome": "Colmar - Arrivo e sistemazione",
-          "maps": "https://maps.google.com/?q=Colmar"
+          "link": "https://link.google.com/?q=Colmar"
         },
         {
           "ora": "13:00",
           "nome": "Colmar - Pranzo",
-          "maps": "https://maps.google.com/?q=Colmar"
+          "link": "https://link.google.com/?q=Colmar"
         }
       ],
       "pomeriggio": [
         {
           "ora": "15:00",
           "nome": "Passeggiata centro storico",
-          "maps": "https://maps.google.com/?q=Haut+Koenigsbourg"
+          "link": "https://link.google.com/?q=Haut+Koenigsbourg"
         }
       ],
       "sera": [
         {
           "ora": "19:00",
           "nome": "Au Crocodile",
-          "maps": "https://maps.google.com/?q=Au+Crocodile"
+          "link": "https://link.google.com/?q=Au+Crocodile"
         }
       ]
     }
