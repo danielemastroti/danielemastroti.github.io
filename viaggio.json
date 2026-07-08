@@ -1,0 +1,17 @@
+{
+  "titolo": "Viaggio Demo",
+  "giorni": [
+    {
+      "giorno": 1,
+      "mattino": [
+        {
+          "ora": "09:00",
+          "nome": "Colmar",
+          "maps": "https://maps.google.com/?q=Colmar"
+        }
+      ],
+      "pomeriggio": [],
+      "sera": []
+    }
+  ]
+}
