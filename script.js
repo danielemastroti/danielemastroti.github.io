@@ -31,3 +31,57 @@ document.addEventListener("DOMContentLoaded", async () => {
             home.appendChild(giornoDiv);
         });
 
+    } catch (err) {
+
+        console.error(err);
+
+        document.getElementById("home").innerHTML = `
+            <div style="color:red">
+                Errore caricamento dati: ${err.message}
+            </div>
+        `;
+    }
+
+});
+
+
+function creaSezione(titolo, attivita, contenitore) {
+
+    if (!attivita || attivita.length === 0) {
+        return;
+    }
+
+    const sezione = document.createElement("div");
+    sezione.className = "sezione";
+
+    const htmlAttivita = attivita.map(item => `
+
+        <div class="attivita">
+
+            <div class="ora">
+                ${item.ora}
+            </div>
+
+            <div class="nome">
+
+                ${
+                    item.link
+                    ? `
+                        ${item.link}
+                      `
+                    : item.nome
+                }
+
+            </div>
+
+        </div>
+
+    `).join("");
+
+    sezione.innerHTML = `
+        <h3>${titolo}</h3>
+        ${htmlAttivita}
+    `;
+
+    contenitore.appendChild(sezione);
+}
