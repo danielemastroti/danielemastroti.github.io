@@ -1,0 +1,25 @@
+{
+  "summary": "Tested backend YAML endpoints and full frontend UX on mobile viewport (390x844). All 3 API endpoints return 200 with valid YAML. All 3 pages (Agenda, Distanze, Documenti) render correctly, navigation works, day selector supports days 1-20 with content switching, activity links open in new tab (target=_blank), print button and OBBLIGATORIO badges present.",
+  "tested_scope": ["backend", "frontend", "integration"],
+  "passed": [
+    "GET /api/agenda -> 200 (valid YAML with 20 days)",
+    "GET /api/distances -> 200",
+    "GET /api/documents -> 200",
+    "Root / redirects to /agenda",
+    "Bottom nav testids present: nav-agenda, nav-distances, nav-documents; navigation switches URL correctly",
+    "Day selector: day-tab-1..day-tab-20 rendered; clicking day-tab-10 renders day-content-10",
+    "Agenda shows Mattina / Pomeriggio / Sera sections with time + title + description",
+    "Activity link 'Vedi dettagli' renders with target=_blank and correct external href",
+    "Print button data-testid=print-agenda-btn present in header",
+    "Distances page renders routes with km and durata (e.g., '3.5 km', '15 minuti')",
+    "Documents page renders categories with OBBLIGATORIO badges",
+    "Mobile responsive layout (390x844) renders cleanly with bottom nav pinned",
+    "No JS runtime errors detected on any page"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true,
+  "notes": "Actual test IDs: day-tab-{n} (not day-btn), print-agenda-btn (not print-btn). window.print() invocation not asserted (would open browser dialog); button presence + onClick handler verified via source inspection is deferred to full QA."
+}

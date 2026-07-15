@@ -1,0 +1,107 @@
+{
+  "project_type": "agenda_static_website",
+  "theme": "light",
+  "archetype": "LUXURY & SWISS HIGH-CONTRAST (Old Money Tech)",
+  "typography": {
+    "primary_font": "Cormorant Garamond",
+    "primary_font_css": "font-serif",
+    "secondary_font": "Manrope",
+    "secondary_font_css": "font-sans",
+    "mono_font": "JetBrains Mono",
+    "mono_font_css": "font-mono",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl font-serif tracking-tighter text-slate-900 leading-tight",
+      "h2": "text-2xl sm:text-3xl font-serif tracking-tight text-slate-800",
+      "h3": "text-xl font-sans font-medium text-slate-900",
+      "body": "text-base font-sans leading-relaxed text-slate-700",
+      "label": "text-xs font-mono tracking-[0.2em] uppercase text-slate-500"
+    }
+  },
+  "colors": {
+    "background": "#F9F9F7",
+    "surface": "#FFFFFF",
+    "text_primary": "#121212",
+    "text_secondary": "#52525B",
+    "accent_primary": "#18181B",
+    "accent_subtle": "#E5E5DF",
+    "border": "rgba(0, 0, 0, 0.08)",
+    "timeline_morning": "#D4C5B9",
+    "timeline_afternoon": "#A3B1A6",
+    "timeline_evening": "#2C3E50"
+  },
+  "visual enhancers": {
+    "surfaces": "Crystal Glass for sticky headers (backdrop-blur-xl bg-white/70 border-b border-black/5). Solid matte white for activity cards with 1px delicate borders.",
+    "shadows": "Minimal. Use shadow-sm (ambient) for cards, and shadow-md with translate-y for hover states.",
+    "borders": "Exposed grid borders for technical elegance. Use 1px border-black/10.",
+    "textures": "Subtle SVG noise overlay fixed to the background (opacity 2%) to give a 'premium digital paper' feel.",
+    "print_styles": "MANDATORY: Add a robust @media print section. Hide navigation, tabs, and buttons. Remove background colors. Force text to solid black and expand all agenda details for clean A4 printing."
+  },
+  "component name": [
+    "AgendaLayout",
+    "DayTabs",
+    "TimeSection",
+    "ActivityItem",
+    "BottomNav",
+    "PrintButton"
+  ],
+  "component_path": "/app/frontend/src/components/",
+  "grids": {
+    "page_layout": "grid-cols-1 md:grid-cols-12 gap-8. Mobile-first one column.",
+    "bento_spacing": "gap-4 md:gap-8. Use generous padding (p-6 or p-8) inside containers."
+  },
+  "layouts": {
+    "general": "Mobile-first approach. Optical alignment over geometric.",
+    "navigation": "Fixed bottom tab bar for mobile (Agenda, Distances, Documents). Fixed left sidebar or top right for desktop.",
+    "header": "Sticky top header containing the Day selector (horizontal scrollable list of 20 days). Must have glassmorphism.",
+    "agenda_flow": "Vertical timeline. Group activities by Morning, Afternoon, Evening using subtle left-border color-coding.",
+    "activity_item": "Flex row. Left: Time (Mono font). Right: Details (Title, Description, Link button)."
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)]",
+    "hover_states": "Hover on activity: bg-slate-50, slight transform -translate-y-0.5.",
+    "page_load": "Staggered fade-in and slight slide-up for agenda items using Framer Motion.",
+    "accessibility": "Respect prefers-reduced-motion."
+  },
+  "accessibility": {
+    "contrast": "Ensure all text meets APCA contrast guidelines. Text over backgrounds must be clearly legible.",
+    "focus": "focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2",
+    "aria": "Use aria-labels for day selectors, navigation icons, and the print button.",
+    "test_ids": "Add data-testid attributes to all interactive elements (e.g., data-testid='day-tab-1', data-testid='print-agenda-btn', data-testid='nav-documents')."
+  },
+  "media": {
+    "icons": "Use @phosphor-icons/react or lucide-react with Duotone or Light weights for a sophisticated, airy look."
+  },
+  "3d libraries": "None. Keep the interface ultra-clean, 2D, and document-focused to maintain professional elegance.",
+  "image urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1514782831304-632d84503f6f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwbGFubmVyJTIwbWluaW1hbGlzbXxlbnwwfHx8fDE3ODQwNjY1Mjd8MA&ixlib=rb-4.1.0&q=85",
+      "category": "Hero/Background",
+      "description": "Elegant minimal desk setup with an iPad, perfect for a subtle hero image or auth background if needed."
+    }
+  ],
+  "instructions_to_main_agent": [
+    "1. Ensure the app perfectly parses a YAML configuration file to generate the 20 days and their respective activities. Use 'yaml' or 'js-yaml' library.",
+    "2. The UI must be highly optimized for mobile devices, functioning like a sleek native app (use safe-area-insets, hide scrollbars on the day horizontal list).",
+    "3. Build the day selector as a horizontally scrollable container with sticky position at the top.",
+    "4. For the 'Print' feature, use window.print() and ensure you write custom @media print CSS in index.css to format the agenda clearly on paper.",
+    "5. Do not use generic Shadcn cards for the agenda items; build custom flat, rectangular HTML/Tailwind items with elegant left-border timeline accents.",
+    "6. Add a routing system (React Router) to handle the multi-page menu (Agenda, Distances, Documents).",
+    "7. Implement all specified typography and colors precisely. Use Cormorant Garamond for elegant section titles.",
+    "8. DO NOT use completely transparent backgrounds for the sticky header; use backdrop-blur and a semi-transparent white."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not converge toward generic 'AI slop' aesthetics. Avoid default Inter/Roboto for headings.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts. Use left alignment for structure and reading flow.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g., transition: all). Add transitions for specific properties.",
+    "You MUST NOT center align the app container, i.e., do not add `.App { text-align: center; }`.",
+    "Always use modern button styles with interaction animations and relevant colors.",
+    "NEVER use AI assistant Emoji characters (🤖🧠💭) for icons.",
+    "Every interaction needs micro-animations (hover states, focus, etc).",
+    "Use 2-3x more spacing than typical designs. Cramped layouts look cheap.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use sonner for toast notifications."
+  ]
+}
